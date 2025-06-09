@@ -335,7 +335,20 @@ body {
 @media (max-width: 700px) {
     .cards-container {
         grid-template-columns: 1fr; /* 1 column for mobile */
-        gap: 20px; /* Slightly smaller gap for mobile */
+        gap: clamp(10px, 5vw, 24px); /* Responsive gap for mobile */
+    }
+    .cert-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    .cert-date {
+        align-self: flex-end;
+        margin-top: 0.25rem;
+    }
+    .cert-title, .cert-organization, .cert-date {
+        word-break: break-word;
+        overflow-wrap: break-word;
     }
 }
 
