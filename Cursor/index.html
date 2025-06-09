@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certification Portfolio - Professional Achievements</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-certificate"></i>
+                <span>Certification Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Professional Certifications & Achievements</h1>
+                <p class="hero-subtitle">A comprehensive showcase of my academic and professional qualifications, demonstrating continuous learning and expertise across various domains.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="totalCerts">0</span>
+                        <span class="stat-label">Total Certifications</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="totalYears">0</span>
+                        <span class="stat-label">Years of Learning</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="activeCerts">0</span>
+                        <span class="stat-label">Active Certifications</span>
+                    </div>
+                </div>
+                <a href="#certifications" class="cta-button">Explore Certifications</a>
+            </div>
+            <div class="hero-image">
+                <div class="certificate-stack">
+                    <div class="hero-cert-card cert-1">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="hero-cert-card cert-2">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="hero-cert-card cert-3">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About This Portfolio</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>This website serves as a comprehensive record of my educational and professional achievements. It showcases my commitment to continuous learning and skill development across various domains.</p>
+                    <p>Each certification represents not just a milestone, but a step forward in my professional journey. From academic qualifications to industry-recognized certifications, this portfolio reflects my dedication to excellence and growth.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-search"></i>
+                            <h3>Transparent Record</h3>
+                            <p>Complete details of all certifications with dates and issuing organizations</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <h3>Up-to-Date</h3>
+                            <p>Regularly updated with new achievements and current status</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Verified Credentials</h3>
+                            <p>All certifications are verified and can be cross-referenced</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">My Certifications</h2>
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+                <button class="filter-btn" data-filter="professional">Professional</button>
+                <button class="filter-btn" data-filter="technical">Technical</button>
+                <button class="filter-btn" data-filter="soft-skills">Soft Skills</button>
+            </div>
+            <div class="certifications-grid" id="certificationsGrid">
+                <!-- Certifications will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <h2 class="section-title">Achievement Timeline</h2>
+            <div class="timeline-container" id="timelineContainer">
+                <!-- Timeline will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Interested in my qualifications?</h3>
+                    <p>Feel free to reach out for more information about my certifications, professional experience, or collaboration opportunities.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>email@example.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Certification Portfolio</h3>
+                    <p>Showcasing professional achievements and continuous learning journey.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Certification Portfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
