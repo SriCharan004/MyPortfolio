@@ -7,7 +7,7 @@ const certifications = [
         date: "2022-03-21",
         description: "Probability exam covering fundamental probability tools for quantitatively assessing risk.",
         category: "actuarial",
-        tags: ["Probability", "Actuarial"],
+        tags: ["Probability"],
         verificationUrl: "#"
     },
     {
@@ -17,7 +17,7 @@ const certifications = [
         date: "2022-06-14",
         description: "Financial Mathematics exam covering interest theory and financial instruments.",
         category: "actuarial",
-        tags: ["Financial Mathematics", "Actuarial"],
+        tags: ["Financial Mathematics"],
         verificationUrl: "#"
     },
     {
@@ -27,7 +27,7 @@ const certifications = [
         date: "2022-11-02",
         description: "Modern Actuarial Statistics I exam covering probability and statistics.",
         category: "actuarial",
-        tags: ["Statistics", "Actuarial"],
+        tags: ["Probability Models","Regression Models","Statistics","Time Series"],
         verificationUrl: "#"
     },
     {
@@ -37,7 +37,7 @@ const certifications = [
         date: "2023-05-10",
         description: "Modern Actuarial Statistics II exam covering advanced statistics and modeling.",
         category: "actuarial",
-        tags: ["Advanced Statistics", "Actuarial"],
+        tags: ["Bayesian Models", "Statistical Learning"],
         verificationUrl: "#"
     },
     {
@@ -47,7 +47,7 @@ const certifications = [
         date: "2025-04-21",
         description: "Exam 5 covering Basic Ratemaking and Reserving.",
         category: "actuarial",
-        tags: ["Advanced Actuarial"],
+        tags: ["Pricing","Reserving"],
         verificationUrl: "#"
     }
 ];
