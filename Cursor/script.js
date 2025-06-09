@@ -23,7 +23,7 @@ const certifications = [
     {
         id: 3,
         title: "MAS-1",
-        organization: "SOA",
+        organization: "CAS",
         date: "2022-11-02",
         description: "Modern Actuarial Statistics I exam covering probability and statistics.",
         category: "actuarial",
@@ -33,7 +33,7 @@ const certifications = [
     {
         id: 4,
         title: "MAS-2",
-        organization: "SOA",
+        organization: "CAS",
         date: "2023-05-10",
         description: "Modern Actuarial Statistics II exam covering advanced statistics and modeling.",
         category: "actuarial",
@@ -43,7 +43,7 @@ const certifications = [
     {
         id: 5,
         title: "Exam 5",
-        organization: "SOA",
+        organization: "CAS",
         date: "2025-04-21",
         description: "Exam 5 covering advanced actuarial topics.",
         category: "actuarial",
