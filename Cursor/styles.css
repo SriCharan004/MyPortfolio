@@ -328,19 +328,14 @@ body {
 
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Desktop */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+    gap: 28px; /* Increased gap for better spacing */
 }
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     .cards-container {
-        grid-template-columns: repeat(2, 1fr); /* Tablet */
-    }
-}
-
-@media (max-width: 600px) {
-    .cards-container {
-        grid-template-columns: 1fr; /* Mobile: single column */
+        grid-template-columns: 1fr; /* 1 column for mobile */
+        gap: 20px; /* Slightly smaller gap for mobile */
     }
 }
 
