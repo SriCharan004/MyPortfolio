@@ -45,7 +45,7 @@ const certifications = [
         title: "Exam 5",
         organization: "CAS",
         date: "2025-04-21",
-        description: "Exam 5 covering advanced actuarial topics.",
+        description: "Exam 5 covering Basic Ratemaking and Reserving.",
         category: "actuarial",
         tags: ["Advanced Actuarial"],
         verificationUrl: "#"
