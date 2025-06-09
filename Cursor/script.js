@@ -2,91 +2,58 @@
 const certifications = [
     {
         id: 1,
-        title: "AWS Certified Solutions Architect",
-        organization: "Amazon Web Services",
-        date: "2024-01-15",
-        description: "Demonstrated expertise in designing distributed systems on AWS platform, including compute, storage, networking, and security services.",
-        category: "technical",
+        title: "EXAM P",
+        organization: "SOA",
+        date: "2022-03-21",
+        description: "Probability exam covering fundamental probability tools for quantitatively assessing risk.",
+        category: "actuarial",
         status: "active",
-        tags: ["Cloud Computing", "AWS", "Architecture"],
-        verificationUrl: "https://aws.amazon.com/verification"
+        tags: ["Probability", "Actuarial"],
+        verificationUrl: "#"
     },
     {
         id: 2,
-        title: "Certified Scrum Master (CSM)",
-        organization: "Scrum Alliance",
-        date: "2023-11-20",
-        description: "Certified in Scrum methodology, enabling effective team collaboration and agile project management practices.",
-        category: "professional",
+        title: "EXAM FM",
+        organization: "SOA",
+        date: "2022-06-14",
+        description: "Financial Mathematics exam covering interest theory and financial instruments.",
+        category: "actuarial",
         status: "active",
-        tags: ["Agile", "Scrum", "Project Management"],
-        verificationUrl: "https://www.scrumalliance.org/verify"
+        tags: ["Financial Mathematics", "Actuarial"],
+        verificationUrl: "#"
     },
     {
         id: 3,
-        title: "Master of Science in Computer Science",
-        organization: "Stanford University",
-        date: "2022-06-15",
-        description: "Graduate degree with focus on artificial intelligence and machine learning algorithms.",
-        category: "academic",
+        title: "MAS-1",
+        organization: "SOA",
+        date: "2022-11-02",
+        description: "Modern Actuarial Statistics I exam covering probability and statistics.",
+        category: "actuarial",
         status: "active",
-        tags: ["Computer Science", "AI/ML", "Graduate Degree"],
-        verificationUrl: "https://registrar.stanford.edu/verify"
+        tags: ["Statistics", "Actuarial"],
+        verificationUrl: "#"
     },
     {
         id: 4,
-        title: "Google Cloud Professional Data Engineer",
-        organization: "Google Cloud",
-        date: "2023-08-10",
-        description: "Expertise in building and maintaining data processing systems on Google Cloud Platform.",
-        category: "technical",
+        title: "MAS-2",
+        organization: "SOA",
+        date: "2023-05-10",
+        description: "Modern Actuarial Statistics II exam covering advanced statistics and modeling.",
+        category: "actuarial",
         status: "active",
-        tags: ["Data Engineering", "GCP", "Big Data"],
-        verificationUrl: "https://cloud.google.com/certification/verify"
+        tags: ["Advanced Statistics", "Actuarial"],
+        verificationUrl: "#"
     },
     {
         id: 5,
-        title: "Certified Information Systems Security Professional (CISSP)",
-        organization: "ISC²",
-        date: "2023-03-25",
-        description: "Advanced security certification covering eight domains of information security.",
-        category: "professional",
+        title: "Exam 5",
+        organization: "SOA",
+        date: "2025-04-21",
+        description: "Exam 5 covering advanced actuarial topics.",
+        category: "actuarial",
         status: "active",
-        tags: ["Cybersecurity", "Information Security", "CISSP"],
-        verificationUrl: "https://www.isc2.org/verify"
-    },
-    {
-        id: 6,
-        title: "Bachelor of Engineering in Software Engineering",
-        organization: "MIT",
-        date: "2020-05-20",
-        description: "Undergraduate degree with comprehensive software development and engineering principles.",
-        category: "academic",
-        status: "active",
-        tags: ["Software Engineering", "Computer Science", "Bachelor's"],
-        verificationUrl: "https://registrar.mit.edu/verify"
-    },
-    {
-        id: 7,
-        title: "Leadership and Communication Skills",
-        organization: "Dale Carnegie Training",
-        date: "2023-09-15",
-        description: "Advanced training in leadership, public speaking, and interpersonal communication skills.",
-        category: "soft-skills",
-        status: "active",
-        tags: ["Leadership", "Communication", "Public Speaking"],
-        verificationUrl: "https://www.dalecarnegie.com/verify"
-    },
-    {
-        id: 8,
-        title: "Microsoft Azure Developer Associate",
-        organization: "Microsoft",
-        date: "2023-12-05",
-        description: "Certification for developing cloud applications using Microsoft Azure services.",
-        category: "technical",
-        status: "active",
-        tags: ["Azure", "Cloud Development", "Microsoft"],
-        verificationUrl: "https://www.microsoft.com/en-us/learning/verify"
+        tags: ["Advanced Actuarial"],
+        verificationUrl: "#"
     }
 ];
 
