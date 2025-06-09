@@ -3,7 +3,7 @@ const certifications = [
     {
         id: 1,
         title: "EXAM P",
-        organization: "SOA",
+        organization: "SO",
         date: "2022-03-21",
         description: "Probability exam covering fundamental probability tools for quantitatively assessing risk.",
         category: "actuarial",
