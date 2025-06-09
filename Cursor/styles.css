@@ -334,8 +334,8 @@ body {
 
 @media (max-width: 700px) {
     .cards-container {
-        grid-template-columns: 1fr; /* 1 column for mobile */
-        gap: clamp(10px, 5vw, 24px); /* Responsive gap for mobile */
+        grid-template-columns: 1fr;
+        gap: clamp(10px, 5vw, 24px);
     }
     .cert-header {
         flex-direction: column;
@@ -349,6 +349,76 @@ body {
     .cert-title, .cert-organization, .cert-date {
         word-break: break-word;
         overflow-wrap: break-word;
+    }
+    .cert-card {
+        padding: 1.5rem;
+    }
+    .cert-date br {
+        display: none;
+    }
+    .timeline-content {
+        position: static;
+        width: 100%;
+        transform: none;
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .timeline-container::before {
+        left: 20px;
+    }
+    .timeline-item {
+        padding-left: 40px;
+        min-height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .certificate-stack {
+        width: 250px;
+        height: 250px;
+    }
+
+    .cert-card {
+        width: 100% !important;
+        height: auto !important;
+        padding: 0.8rem;
+        font-size: 0.95rem;
+    }
+    .cert-title {
+        flex: 1 1 100%;
+    }
+    .cert-organization {
+        font-size: 0.95rem;
+    }
+    .cert-date {
+        font-size: 0.8rem;
+        margin-left: auto;
+    }
+    .cert-description {
+        font-size: 0.95rem;
+    }
+    .timeline-content {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+    .timeline-title {
+        font-size: 1rem;
+    }
+    .timeline-date {
+        font-size: 0.8rem;
     }
 }
 
@@ -377,7 +447,8 @@ body {
 .cert-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     margin-bottom: 1rem;
 }
 
@@ -386,6 +457,9 @@ body {
     font-weight: 600;
     color: #1f2937;
     margin-bottom: 0.5rem;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    hyphens: none;
 }
 
 .cert-organization {
@@ -399,6 +473,8 @@ body {
     border-radius: 15px;
     font-size: 0.9rem;
     color: #6b7280;
+    white-space: nowrap;
+    display: inline-block;
 }
 
 .cert-description {
@@ -757,31 +833,6 @@ body {
 
     .filter-container {
         justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .section-title {
-        font-size: 2rem;
-    }
-
-    .hero-stats {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .certificate-stack {
-        width: 250px;
-        height: 250px;
-    }
-
-    .cert-card {
-        width: 150px;
-        height: 90px;
     }
 }
 
