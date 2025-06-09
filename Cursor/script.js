@@ -7,7 +7,6 @@ const certifications = [
         date: "2022-03-21",
         description: "Probability exam covering fundamental probability tools for quantitatively assessing risk.",
         category: "actuarial",
-        status: "active",
         tags: ["Probability", "Actuarial"],
         verificationUrl: "#"
     },
@@ -18,40 +17,36 @@ const certifications = [
         date: "2022-06-14",
         description: "Financial Mathematics exam covering interest theory and financial instruments.",
         category: "actuarial",
-        status: "active",
         tags: ["Financial Mathematics", "Actuarial"],
         verificationUrl: "#"
     },
     {
         id: 3,
         title: "MAS-1",
-        organization: "CAS",
+        organization: "SOA",
         date: "2022-11-02",
         description: "Modern Actuarial Statistics I exam covering probability and statistics.",
         category: "actuarial",
-        status: "active",
         tags: ["Statistics", "Actuarial"],
         verificationUrl: "#"
     },
     {
         id: 4,
         title: "MAS-2",
-        organization: "CAS",
+        organization: "SOA",
         date: "2023-05-10",
         description: "Modern Actuarial Statistics II exam covering advanced statistics and modeling.",
         category: "actuarial",
-        status: "active",
         tags: ["Advanced Statistics", "Actuarial"],
         verificationUrl: "#"
     },
     {
         id: 5,
         title: "Exam 5",
-        organization: "CAS",
+        organization: "SOA",
         date: "2025-04-21",
         description: "Exam 5 covering advanced actuarial topics.",
         category: "actuarial",
-        status: "active",
         tags: ["Advanced Actuarial"],
         verificationUrl: "#"
     }
@@ -101,17 +96,12 @@ navLinks.forEach(link => {
 // Initialize stats
 function initializeStats() {
     const totalCerts = certifications.length;
-    const activeCerts = certifications.filter(cert => cert.status === 'active').length;
-    
     // Calculate years of learning (from earliest to latest certification)
     const dates = certifications.map(cert => new Date(cert.date));
     const earliestDate = new Date(Math.min(...dates));
     const latestDate = new Date(Math.max(...dates));
     const yearsOfLearning = Math.ceil((latestDate - earliestDate) / (1000 * 60 * 60 * 24 * 365));
-    
-    // Animate stats counting up
     animateCounter(totalCertsElement, totalCerts);
-    animateCounter(activeCertsElement, activeCerts);
     animateCounter(totalYearsElement, yearsOfLearning);
 }
 
@@ -145,10 +135,6 @@ function renderCertifications(filter = 'all') {
 function createCertificationCard(cert) {
     const card = document.createElement('div');
     card.className = 'cert-card fade-in-up';
-    
-    const statusClass = cert.status === 'active' ? 'status-active' : 'status-expired';
-    const statusText = cert.status === 'active' ? 'Active' : 'Expired';
-    
     card.innerHTML = `
         <div class="cert-header">
             <div>
@@ -161,16 +147,12 @@ function createCertificationCard(cert) {
         <div class="cert-tags">
             ${cert.tags.map(tag => `<span class="cert-tag">${tag}</span>`).join('')}
         </div>
-        <div class="cert-status ${statusClass}">${statusText}</div>
     `;
-    
-    // Add click event for verification
     card.addEventListener('click', () => {
         if (cert.verificationUrl) {
             window.open(cert.verificationUrl, '_blank');
         }
     });
-    
     return card;
 }
 
